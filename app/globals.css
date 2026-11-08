@@ -1,6 +1,6 @@
 :root{--bg:#040918;--navy:#0a1736;--card:#0d1c44;--blue:#2f6bff;--sky:#38bdf8;--ice:#e0ecff;--mute:#9db2d9;--line:rgba(96,165,250,.2)}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;overflow-x:clip}
 body{background:var(--bg);color:var(--ice);line-height:1.9;overflow-x:hidden}
 main{position:relative;max-width:1120px;margin:auto;padding:0 20px 40px;isolation:isolate}
 .bg{position:absolute;inset:0 -50vw auto;height:900px;z-index:-2;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(60% 60% at 50% 30%,#000,transparent);mask-image:radial-gradient(60% 60% at 50% 30%,#000,transparent);opacity:.5}
@@ -10,7 +10,7 @@ main{position:relative;max-width:1120px;margin:auto;padding:0 20px 40px;isolatio
 .badge{display:inline-flex;align-items:center;gap:10px;padding:6px 16px;border:1px solid var(--line);border-radius:99px;color:var(--sky);font-size:.85rem;background:#0a173699}
 .badge i{width:8px;height:8px;border-radius:50%;background:#22d3ee;box-shadow:0 0 0 0 #22d3ee;animation:ping 2s infinite}
 h1{font-size:clamp(3.4rem,12vw,7.2rem);font-weight:800;line-height:1.1;background:linear-gradient(120deg,#fff 20%,#7dd3fc 55%,var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
-.roles{position:relative;height:2.4rem;width:100%;overflow:hidden;font-size:clamp(1.2rem,3.4vw,1.8rem);font-weight:800;color:var(--sky)}
+.roles{position:relative;height:2.4rem;line-height:2.4rem;width:100%;overflow:hidden;font-size:clamp(1.2rem,3.4vw,1.8rem);font-weight:800;color:var(--sky)}
 .roles span{position:absolute;inset-inline-start:0;opacity:0;animation:role 12s infinite}
 .roles span:nth-child(2){animation-delay:3s}.roles span:nth-child(3){animation-delay:6s}.roles span:nth-child(4){animation-delay:9s}
 .sub{max-width:480px;color:var(--mute)}

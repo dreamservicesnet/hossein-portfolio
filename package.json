@@ -2,6 +2,29 @@
   "name": "hossein-portfolio",
   "version": "1.0.0",
   "private": true,
-  "scripts": { "dev": "next dev", "build": "next build", "start": "next start" },
-  "dependencies": { "next": "^15.0.0", "react": "^19.0.0", "react-dom": "^19.0.0" }
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "serve out",
+    "lint": "eslint . --max-warnings=0"
+  },
+  "dependencies": {
+    "next": "^15.5.29",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.7",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^15.5.29",
+    "serve": "^14.2.7"
+  },
+  "overrides": {
+    "next": { "postcss": "8.5.32" },
+    "serve": { "compression": "1.8.2" },
+    "@typescript-eslint/typescript-estree": { "minimatch": "11.0.5" }
+  }
 }
